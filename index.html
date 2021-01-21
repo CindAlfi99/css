@@ -7,62 +7,102 @@
     <title>Check</title>
     <style>
         .title img {
-            background-size: cover;
+            /* background-size: cover; */
+            object-fit: cover;
+            /* cover, contain, fill, scale-down */
+            height: 350px;
+            object-position: center;
             opacity: 0.8;
             filter: contrast(300%);
             filter: grayscale(150%);
         }
-        
-        h1 {
+        /* h1 {
             position: absolute;
             margin-left: 35%;
-            transform: translateY(-310px);
+            transform: translateY(-270px);
             color: white;
             font-size: 80px;
-        }
+        } */
         
         .titles {
-            position: absolute;
-            margin-left: 39%;
-            transform: translateY(-180px);
+            margin-left: 35%;
+            transform: translateY(-130px);
             color: white;
-            font-size: 30px;
+            font-size: 40px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         
         span {
-            background-color: teal;
+            background-color: #d9e4dd;
         }
         
         .list {
             padding-top: 20px;
-            padding-bottom: 20px;
-            background-color: palevioletred;
+            padding-bottom: 30px;
+            background-color: #df7861;
             color: white;
+            padding-left: 20px;
+            padding-right: 4px;
+        }
+        
+        p,
+        ul li {
+            font-size: 30px;
+            font-family: monospace;
+        }
+        
+        .content {
+            margin-top: -30px;
+        }
+        
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .grid {
+            display: grid;
+            grid-row-gap: 1px;
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+        
+        .title-grid,
+        h1 {
+            display: grid;
+            grid-template-rows: 200px 200px;
+        }
+        
+        font {
+            font-size: 22px;
+            margin-right: 20px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="title">
-            <img src="img/4.jpg" width="100%" height="300 ">
-            <h1>McCircuit</h1>
-            <p class="titles">Software Developer</p>
+        <div class="title title-grid">
+            <img src="img/5.jpg" width="100%" height="300 ">
+            <!-- <h1>Agnez Mo</h1> -->
+            <p class="titles">Agnez Mo<br>
+                <font>Singer</font>
+            </p>
         </div>
-        <div class="content ">
+        <div class="content grid ">
             <h2>A bit more about me</h2>
-            <p>Hey I am McCircuit, I work for <span>Code School</span> and I love writing Code! </p>
+            <p>Hi, I am Agnez Mo, I work as a <span>singer</span> and <span>actress</span> in Indonesia and overseas! </p>
         </div>
         <div class="list ">
             <h2>Skills</h2>
-            <p>Here are some of the technologies I enjoy writing day-to-day </p>
+            <p>Here are some of the skills I currently have</p>
             <ul>
-                <li>HTML & CSS</li>
-                <li>Node.js</li>
-                <li>React</li>
-                <li>Angular 2</li>
-                <li>Webpack</li>
+                <li>Singer</li>
+                <li>Soap opera player</li>
+                <li>Master of Ceremony</li>
+                <li>Dance </li>
+                <li>Model</li>
+
             </ul>
         </div>
     </div>
