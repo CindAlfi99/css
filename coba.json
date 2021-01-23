@@ -1,0 +1,19 @@
+[{
+        "nama": "cindi",
+        "prodi": "manajemen informatika",
+        "pembimbing": {
+            "pembimbing1": "dona marcelina",
+            "pembimbing2": "hendra dikesuma"
+        },
+        "judul skripsi": ["judul1", "judul2", "judul3"]
+    },
+    {
+        "nama": "cind",
+        "prodi": "manajemen informatika",
+        "pembimbing": {
+            "pembimbing1": "dona marcelina",
+            "pembimbing2": "hendra dikesuma"
+        },
+        "judul skripsi": ["judul1", "judul2", "judul3"]
+    }
+]
