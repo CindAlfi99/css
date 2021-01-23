@@ -77,6 +77,12 @@
             font-size: 22px;
             margin-right: 20px;
         }
+        
+        .dark {
+            background-color: black;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
     </style>
 </head>
 
@@ -105,7 +111,17 @@
 
             </ul>
         </div>
+        <br>
+        <center><button class="btn btn-dark">Light | dark</button></center>
+
     </div>
 </body>
+<script>
+    let dark = document.querySelector('.btn-dark');
+    dark.addEventListener("click", function() {
+
+        console.log(document.body.classList.toggle('dark'));
+    })
+</script>
 
 </html>
